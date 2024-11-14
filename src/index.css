@@ -1,40 +1,46 @@
 :root {
-  --primary-color: #3b82f6;
-  --primary-hover-color: #2563eb;
+  --primary-color: #27539b;
+  --primary-hover-color: #0b1e47;
   --primary-text-color: white;
 
-  --body-color: #6b7280;
-  --body-light-color: #f9fafb;
+  --header-text-color: #1e242e;
+  
+  
+  --body-color: #536486;
+  --body-light-color: #e0ecf7;
   --body-light-border-color: #e5e7eb;
-  --body-text-color: #111827;
+  --text-color: #2c313c;
+
+
+  --gradient-start: #27539b;
+  --gradient-end: #27539b;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --color-picker: #000;
-} */
 
 /* color options: https://tailwindcss.com/docs/customizing-colors */
 
 @layer components {
   .bg-gradient {
-    @apply bg-gradient-to-r from-primary to-purple-500;
+    @apply bg-gradient-to-r from-gradientStart to-gradientEnd;
   }
 
   .card {
     @apply bg-bodyLight border border-bodyLightBorder rounded-lg p-8 flex-1 text-center shadow-sm md:h-80;
+    @apply text-bodyText;
   }
 
   .featureHero {
     @apply bg-white;
     @apply rounded-lg shadow-lg p-8 w-full max-w-5xl;
+    @apply bg-gradient;
   }
 
   .pricingHeader {
-    @apply text-2xl font-bold text-center mb-8 text-bodyText;
+    @apply text-2xl font-bold text-center mb-8 text-headerTextColor;
   }
 
   .cardContainer {
