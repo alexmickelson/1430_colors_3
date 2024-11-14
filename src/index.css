@@ -1,68 +1,64 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* color options: https://tailwindcss.com/docs/customizing-colors */
+@layer components {
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+  .bg-gradient {
+    @apply bg-gradient-to-r from-blue-400 to-purple-500;
   }
-  a:hover {
-    color: #747bff;
+
+  .card {
+    @apply bg-light border border-light rounded-lg p-8 flex-1 text-center shadow-sm md:h-80;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .featureHero {
+    @apply bg-main rounded-lg shadow-lg p-8 w-full max-w-5xl;
+    /* @apply bg-gradient; */
+  }
+
+  .pricingHeader {
+    @apply text-2xl font-bold text-center mb-8 text-gray-900;
+  }
+  .cardContainer {
+    @apply flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-6;
+  }
+
+  .bg-primary {
+    @apply bg-gray-500;
+  }
+
+  .bg-primary-hover {
+    @apply bg-gray-600;
+  }
+
+  .text-primary {
+    @apply text-gray-500;
+  }
+
+  .text-secondary {
+    @apply text-gray-600;
+  }
+
+  .bg-light {
+    @apply bg-gray-50;
+  }
+
+  .border-light {
+    @apply border-gray-200;
+  }
+
+  .bg-main {
+    @apply bg-white;
+  }
+
+  .btn {
+    @apply bg-primary text-white px-6 py-3 rounded;
+  }
+
+  .btn:hover {
+    @apply bg-primary-hover;
   }
 }
