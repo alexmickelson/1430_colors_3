@@ -1,61 +1,56 @@
+:root {
+  --primary-color: #3b82f6;
+  --primary-hover-color: #2563eb;
+  --primary-text-color: white;
+
+  --body-color: #6b7280;
+  --body-light-color: #f9fafb;
+  --body-light-border-color: #e5e7eb;
+  --body-text-color: #111827;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* :root {
+  --color-picker: #000;
+} */
 
 /* color options: https://tailwindcss.com/docs/customizing-colors */
-@layer components {
 
+@layer components {
   .bg-gradient {
-    @apply bg-gradient-to-r from-blue-400 to-purple-500;
+    @apply bg-gradient-to-r from-primary to-purple-500;
   }
 
   .card {
-    @apply bg-light border border-light rounded-lg p-8 flex-1 text-center shadow-sm md:h-80;
+    @apply bg-bodyLight border border-bodyLightBorder rounded-lg p-8 flex-1 text-center shadow-sm md:h-80;
   }
 
   .featureHero {
-    @apply bg-main rounded-lg shadow-lg p-8 w-full max-w-5xl;
-    /* @apply bg-gradient; */
+    @apply bg-white;
+    @apply rounded-lg shadow-lg p-8 w-full max-w-5xl;
   }
 
   .pricingHeader {
-    @apply text-2xl font-bold text-center mb-8 text-gray-900;
+    @apply text-2xl font-bold text-center mb-8 text-bodyText;
   }
+
   .cardContainer {
     @apply flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-6;
   }
 
-  .bg-primary {
-    @apply bg-gray-500;
-  }
-
   .bg-primary-hover {
-    @apply bg-gray-600;
-  }
-
-  .text-primary {
-    @apply text-gray-500;
-  }
-
-  .text-secondary {
-    @apply text-gray-600;
-  }
-
-  .bg-light {
-    @apply bg-gray-50;
+    @apply bg-primaryHover;
   }
 
   .border-light {
-    @apply border-gray-200;
-  }
-
-  .bg-main {
-    @apply bg-white;
+    @apply border-bodyLightBorder;
   }
 
   .btn {
-    @apply bg-primary text-white px-6 py-3 rounded;
+    @apply bg-primary text-primaryTextColor px-6 py-3 rounded;
   }
 
   .btn:hover {

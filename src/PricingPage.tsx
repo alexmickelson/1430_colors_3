@@ -9,9 +9,9 @@ export function Pricing() {
             <h2 className="text-2xl font-semibold mb-6">Basic</h2>
             <p className="text-4xl font-bold mb-6">$10</p>
             <ul className="mb-8">
-              <li className="text-secondary">Feature 1</li>
-              <li className="text-secondary">Feature 2</li>
-              <li className="text-secondary">Feature 3</li>
+              <li className="text-bodyText">Feature 1</li>
+              <li className="text-bodyText">Feature 2</li>
+              <li className="text-bodyText">Feature 3</li>
             </ul>
             <button className="btn">Select</button>
           </div>
@@ -21,9 +21,9 @@ export function Pricing() {
             <h2 className="text-2xl font-semibold mb-6">Pro</h2>
             <p className="text-4xl font-bold mb-6">$30</p>
             <ul className="mb-8">
-              <li className="text-secondary">Feature 1</li>
-              <li className="text-secondary">Feature 2</li>
-              <li className="text-secondary">Feature 3</li>
+              <li className="text-bodyText">Feature 1</li>
+              <li className="text-bodyText">Feature 2</li>
+              <li className="text-bodyText">Feature 3</li>
             </ul>
             <button className="btn">Select</button>
           </div>
@@ -33,9 +33,9 @@ export function Pricing() {
             <h2 className="text-2xl font-semibold mb-6">Enterprise</h2>
             <p className="text-4xl font-bold mb-6">$50</p>
             <ul className="mb-8">
-              <li className="text-secondary">Feature 1</li>
-              <li className="text-secondary">Feature 2</li>
-              <li className="text-secondary">Feature 3</li>
+              <li className="text-bodyText">Feature 1</li>
+              <li className="text-bodyText">Feature 2</li>
+              <li className="text-bodyText">Feature 3</li>
             </ul>
             <button className="btn">Select</button>
           </div>
